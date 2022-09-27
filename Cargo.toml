@@ -1,5 +1,5 @@
 [package]
-name = "rs_lib_serde_strategy_json"
+name = "rs_lib_strategy_serde_json"
 version = "0.1.0"
 authors = ["alexandre.mahdhaoui <alexandre.mahdhaoui@gmail.com>"]
 edition = "2021"
@@ -10,9 +10,9 @@ edition = "2021"
 serde = "1"
 serde_json = "1"
 
-[dependencies.serde_strategy]
-git = "https://gitlab.com/alexandre.mahdhaoui/rs-lib-serde-strategy"
-package = "rs_lib_serde_strategy"
+[dependencies.strategy_serde]
+git = "https://gitlab.com/alexandre.mahdhaoui/rs-lib-strategy-serde"
+package = "rs_lib_strategy_serde"
 
 [dev-dependencies]
 serde = { version = "1", features = ["derive"]}

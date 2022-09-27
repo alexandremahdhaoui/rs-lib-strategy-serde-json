@@ -1,16 +1,16 @@
-# rs-lib-serde-strategy-json
+# rs-lib-strategy-serde-json
 
 This library depends on:
 - `serde_json`
-- `rs-lib-serde-strategy`
+- `rs-lib-strategy-serde`
 
 ## Usage
 
 ```rust
 fn main() {
     use serde::{Serialize, Deserialize};
-    use rs_lib_serde_strategy::StrategyInjector;
-    use rs_lib_serde_strategy_json::JsonStrategy;
+    use rs_lib_strategy_serde::StrategyInjector;
+    use rs_lib_strategy_serde_json::JsonStrategy;
 
     #[derive(Debug, Deserialize, PartialEq, Serialize)]
     struct Test {string: String}

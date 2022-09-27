@@ -1,5 +1,5 @@
 use serde::{Deserialize, Serialize};
-use serde_strategy::Strategy;
+use strategy_serde::Strategy;
 
 pub struct JsonStrategy;
 impl Strategy for JsonStrategy {
@@ -22,7 +22,7 @@ impl Strategy for JsonStrategy {
 mod tests {
     use pretty_assertions::assert_eq;
     use serde::{Serialize, Deserialize};
-    use serde_strategy::StrategyInjector;
+    use strategy_serde::StrategyInjector;
     use crate::JsonStrategy;
 
     #[derive(Debug, Deserialize, PartialEq, Serialize)]
